@@ -8,7 +8,7 @@ int main()
     if (!glfwInit())
         exit(EXIT_FAILURE);
 
-    GLFWwindow* window = glfwCreateWindow(400, 400, "Example", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(400, 400, "Example triangle", nullptr, nullptr);
 
     if (!window)
     {
@@ -31,7 +31,7 @@ int main()
         glBegin(GL_TRIANGLES);
             glVertex2f(-0.5f, -0.5f); glColor3f(1, 0, 0);
             glVertex2f(0.0f, 0.5f); glColor3f(0, 1, 0);
-            glVertex2f(0.5f, -0.5f); glColor3f(0, 0, 0);
+            glVertex2f(0.5f, -0.5f); glColor3f(0, 0, 1);
         glEnd();
 
         glfwSwapBuffers(window);
